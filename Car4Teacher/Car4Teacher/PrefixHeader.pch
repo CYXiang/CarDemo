@@ -1,0 +1,68 @@
+//
+//  PrefixHeader.pch
+//  Global
+//
+//  Created by fanny on 15/12/4.
+//  Copyright © 2015年 DR_Li. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+//  配置文件
+#import "GlobalConfig.h"
+//  接口文档
+#import "BSInterfacesFile.h"
+
+#import "AppDelegate.h"
+//用户模型
+#import "BSUserInfo.h"
+
+
+/*****************************************************************************/
+#import "ICBaseViewController.h"
+// 工具类
+#import "BSTool.h"
+// 导航栏
+#import "BSNavigationController.h"
+
+/*****************************************************************************/
+// UIView扩展类
+#import "UIView+Frame.h"
+// 颜色扩展类
+#import "UIColor+Extend.h"
+// 字符串扩展类
+#import "NSString+Regex.h"
+// 计算字体的Size
+#import "NSString+Size.h"
+// 字符串格式化
+#import "NSString+Format.h"
+
+#import "UIBarButtonItem+Extension.h"
+
+#import "NSString+CYXExtension.h"
+
+/*****************************************************************************/
+// 约束类
+#import <Masonry.h>
+//
+#import "MBProgressHUD+BS.h"
+// 图片加载
+#import "UIImageView+WebCache.h"
+// 上下拉加载更多
+#import "ICRefreshHeader.h"
+
+
+/*****************************************************************************/
+// 定义返回请求数据的block类型
+typedef void (^ReturnValueBlock) (id returanValue);
+typedef void (^ErrorCodeBlock) (id errorCode);
+//typedef void (^FailureBlock) ();
+typedef void (^TokenInvalidBlock) (); // token 过期
+
+#endif /* PrefixHeader_pch */
