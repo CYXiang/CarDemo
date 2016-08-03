@@ -10,6 +10,8 @@
 #import "BSNavigationController.h"
 #import "ICHomeViewController.h"
 #import "ICMineViewController.h"
+#import "ICJoinViewController.h"
+#import "ICLeanViewController.h"
 
 @interface BSTabBarController ()
 
@@ -61,6 +63,10 @@
     
     
     [self setUpOneViewController:[[ICHomeViewController alloc]init] title:@"首页" image:@"tabbar_home_nor" selectImage:@"tabbar_home_pre"];
+
+    [self setUpOneViewController:[[ICJoinViewController alloc]init] title:@"报名" image:@"tabbar_home_nor" selectImage:@"tabbar_home_pre"];
+    
+    [self setUpOneViewController:[[ICLeanViewController alloc]init] title:@"培训" image:@"tabbar_home_nor" selectImage:@"tabbar_home_pre"];
     
     [self setUpOneViewController:[[ICMineViewController alloc]init] title:@"我的" image:@"tabbar_mine_nor" selectImage:@"tabbar_mine_pre"];
     

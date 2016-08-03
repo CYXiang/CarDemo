@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		32D9AEA1E4494373E00448DD /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BABFC83688D265B27589C6C /* libPods.a */; };
+		8FCCB1611D525E92006F7EAD /* ICPlanClassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FCCB1601D525E92006F7EAD /* ICPlanClassViewController.m */; };
 		8FD77DCD1D4905CB006C0A3A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FD77DCC1D4905CB006C0A3A /* main.m */; };
 		8FD77DD01D4905CB006C0A3A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FD77DCF1D4905CB006C0A3A /* AppDelegate.m */; };
 		8FD77DD61D4905CB006C0A3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FD77DD41D4905CB006C0A3A /* Main.storyboard */; };
@@ -150,6 +151,8 @@
 		0110182B9305762F203A5679 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		425861EB8F0A32957478D8FF /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		5BABFC83688D265B27589C6C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FCCB15F1D525E92006F7EAD /* ICPlanClassViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICPlanClassViewController.h; sourceTree = "<group>"; };
+		8FCCB1601D525E92006F7EAD /* ICPlanClassViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICPlanClassViewController.m; sourceTree = "<group>"; };
 		8FD77DC81D4905CB006C0A3A /* Car4Teacher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Car4Teacher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FD77DCC1D4905CB006C0A3A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8FD77DCE1D4905CB006C0A3A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -392,6 +395,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8FCCB15A1D525E59006F7EAD /* Plan */ = {
+			isa = PBXGroup;
+			children = (
+				8FCCB15B1D525E59006F7EAD /* Controller */,
+				8FCCB15C1D525E59006F7EAD /* Model */,
+				8FCCB15D1D525E59006F7EAD /* Request */,
+				8FCCB15E1D525E59006F7EAD /* View */,
+			);
+			path = Plan;
+			sourceTree = "<group>";
+		};
+		8FCCB15B1D525E59006F7EAD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8FCCB15F1D525E92006F7EAD /* ICPlanClassViewController.h */,
+				8FCCB1601D525E92006F7EAD /* ICPlanClassViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8FCCB15C1D525E59006F7EAD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8FCCB15D1D525E59006F7EAD /* Request */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		8FCCB15E1D525E59006F7EAD /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		8FD77DBF1D4905CB006C0A3A = {
 			isa = PBXGroup;
 			children = (
@@ -459,9 +503,10 @@
 		8FD780BA1D490FA7006C0A3A /* classes */ = {
 			isa = PBXGroup;
 			children = (
-				8FD780BB1D490FA7006C0A3A /* Home */,
-				8FD780DD1D490FA7006C0A3A /* Login */,
 				8FD780FA1D490FA7006C0A3A /* Main */,
+				8FD780BB1D490FA7006C0A3A /* Home */,
+				8FCCB15A1D525E59006F7EAD /* Plan */,
+				8FD780DD1D490FA7006C0A3A /* Login */,
 				8FD781131D490FA7006C0A3A /* Mine */,
 				8FD7813D1D490FA7006C0A3A /* Other */,
 			);
@@ -1207,6 +1252,7 @@
 				8FD782101D490FA7006C0A3A /* TAAbstractDotView.m in Sources */,
 				8FD782121D490FA7006C0A3A /* TADotView.m in Sources */,
 				8FD781CB1D490FA7006C0A3A /* BSNotNetworkView.m in Sources */,
+				8FCCB1611D525E92006F7EAD /* ICPlanClassViewController.m in Sources */,
 				8FD781E21D490FA7006C0A3A /* NSString+CYXExtension.m in Sources */,
 				8FD781D51D490FA7006C0A3A /* ICUserCarInformationModel.m in Sources */,
 				8FD781E71D490FA7006C0A3A /* UIColor+Extend.m in Sources */,
